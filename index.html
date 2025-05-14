@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pulso Solidário - Encontre um posto para doar sangue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <header>
+    <h1>Coração que Doa</h1>
+    <p>Encontre um posto de doação de sangue perto de você</p>
+  </header>
+
+  <div class="container">
+    <img src="/Depositphotos_49909337_xl-2015-1-scaled.jpg" alt="">
+    <label for="cep">Digite seu CEP (sem o hífen):</label><br />
+    <input type="text" id="cep" placeholder="Ex: 01001-000" />
+    <button onclick="buscarPostos()">Buscar</button>
+
+    <div class="result" id="resultado"></div>
+  </div>
+  <div id="pe"> <footer >
+    <p>"Quando você doa sangue, não está apenas oferecendo um líquido — está entregando esperança, renovando vidas e mostrando que a empatia ainda pulsa forte na humanidade. Em poucos minutos, você pode ser a razão de alguém sorrir de novo. Seja a diferença. Doe sangue, doe vida."</p>
+  </footer></div>
+ 
+
+  <script src="site.js"></script>
+
+  
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="agendamento-doacao">
+        <h2>Agende sua Doação</h2>
+        <p>Escolha o local e a data que melhor se encaixam na sua rotina.</p>
+      
+        <form id="formulario-agendamento">
+          <div class="campo">
+            <label for="local-doacao">Local de Doação:</label>
+            <select id="local-doacao" name="local-doacao" required>
+              <option value="">Selecione um local</option>
+              <option value="hemocentro-caxias"> Caxias do Sul</option>
+            </select>
+          </div>
+      
+          <div class="campo">
+            <label for="data-doacao">Data da Doação:</label>
+            <input type="date" id="data-doacao" name="data-doacao" required>
+          </div>
+      
+          <div class="campo">
+            <label for="horario-doacao">Horário da Doação:</label>
+            <select id="horario-doacao" name="horario-doacao" required>
+              <option value="">Selecione um horário</option>
+              <option value="09:00">09:00</option>
+              <option value="10:00">10:00</option>
+              <option value="11:00">11:00</option>
+              <option value="14:00">14:00</option>
+              <option value="15:00">15:00</option>
+              <option value="16:00">16:00</option>
+            </select>
+          </div>
+      
+          <button type="submit">Agendar Doação</button>
+      
+          <div id="mensagem-agendamento" class="mensagem" style="display:none;"></div>
+        </form>
+      </section>
+      
+     
+</body>
+</html>
+
+</html>
